@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confección de Señalética Vial - Constructora Puerto Varas. Fabricación e instalación de señalización vial conforme a normativas vigentes.">
+    <title>Confección de Señalética Vial - Constructora Puerto Varas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .service-hero {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        .service-hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        .service-hero p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .service-content {
+            padding: 4rem 0;
+        }
+        .service-info {
+            max-width: 900px;
+            margin: 0 auto 4rem;
+        }
+        .service-info h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+        }
+        .service-info p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        .service-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .feature-item {
+            padding: 1.5rem;
+            background: var(--bg-light);
+            border-radius: 0.75rem;
+            border-left: 4px solid var(--primary-color);
+        }
+        .feature-item h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+        .feature-item p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .service-gallery {
+            margin-top: 4rem;
+        }
+        .service-gallery h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .gallery-item {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-item-caption {
+            padding: 1rem;
+            background: white;
+            text-align: center;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <a href="../index.html" class="logo-link">
+                            <img src="../images/logo-constructora.png" alt="Constructora Puerto Varas" class="logo-image" loading="lazy">
+                        </a>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="../index.html#inicio" class="nav-link">Inicio</a></li>
+                        <li><a href="../index.html#servicios" class="nav-link">Servicios</a></li>
+                        <li><a href="../index.html#proyectos" class="nav-link">Proyectos</a></li>
+                        <li><a href="../index.html#recursos" class="nav-link">Recursos</a></li>
+                        <li><a href="../index.html#nosotros" class="nav-link">Nosotros</a></li>
+                        <li><a href="../index.html#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                    <a href="http://127.0.0.1:8001/login" class="btn-login" target="_blank" title="Acceder al Sistema">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
+                        </svg>
+                    </a>
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <h1>Confección de Señalética Vial</h1>
+            <p>Fabricación e instalación de señalización vial conforme a normativas vigentes. Señales verticales, horizontales y elementos de seguridad vial.</p>
+        </div>
+    </section>
+
+    <!-- Service Content -->
+    <section class="service-content">
+        <div class="container">
+            <div class="service-info">
+                <h2>Nuestra Especialización</h2>
+                <p>
+                    En Constructora Puerto Varas, nos especializamos en la fabricación e instalación de señalización vial completa, 
+                    cumpliendo estrictamente con las normativas vigentes y estándares de seguridad. Nuestro servicio abarca desde 
+                    la fabricación de señales hasta su instalación y mantenimiento, garantizando una solución integral para proyectos 
+                    viales de cualquier envergadura.
+                </p>
+                <p>
+                    Hemos ejecutado proyectos de señalización para redes viales de más de 200 km, incluyendo señalización vertical 
+                    y horizontal, siempre con el más alto estándar de calidad y cumplimiento normativo.
+                </p>
+
+                <h2>Servicios de Señalización</h2>
+                <div class="service-features">
+                    <div class="feature-item">
+                        <h3>Señalización Vertical</h3>
+                        <p>Fabricación e instalación de señales de tránsito, paneles informativos y elementos de señalización vertical conforme a normativas.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Señalización Horizontal</h3>
+                        <p>Marcado de pavimento, líneas de demarcación, símbolos y elementos de señalización horizontal con materiales de alta durabilidad.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Elementos de Seguridad</h3>
+                        <p>Instalación de elementos de seguridad vial como guardarraíles, defensas, conos, balizas y otros elementos de protección.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Fabricación Propia</h3>
+                        <p>Taller propio para la fabricación de señales, garantizando calidad, tiempos de entrega y costos competitivos.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Diseño y Planificación</h3>
+                        <p>Servicios de diseño y planificación de señalización según las necesidades específicas de cada proyecto.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Mantenimiento</h3>
+                        <p>Servicios de mantenimiento y reposición de señalización existente para asegurar su funcionalidad continua.</p>
+                    </div>
+                </div>
+
+                <h2>Cumplimiento Normativo</h2>
+                <p>
+                    Todas nuestras señales y elementos de señalización cumplen con las normativas vigentes establecidas por las 
+                    autoridades competentes. Trabajamos con materiales certificados y procesos que garantizan la durabilidad, 
+                    visibilidad y funcionalidad de la señalización en todas las condiciones climáticas y de uso.
+                </p>
+            </div>
+
+            <!-- Gallery -->
+            <div class="service-gallery">
+                <h2>Galería de Proyectos</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../images/proyecto-senaletica-red-nacional.jpg" alt="Señalética vial red nacional" loading="lazy">
+                        <div class="gallery-item-caption">Señalética Vial - Red Nacional</div>
+                    </div>
+                    <div class="gallery-item">
+                        <span class="image-placeholder-label">Imagen: senaletica-1.jpg</span>
+                        <div class="gallery-item-caption">Fabricación de Señales</div>
+                    </div>
+                    <div class="gallery-item">
+                        <span class="image-placeholder-label">Imagen: senaletica-2.jpg</span>
+                        <div class="gallery-item-caption">Instalación de Señalización</div>
+                    </div>
+                    <div class="gallery-item">
+                        <span class="image-placeholder-label">Imagen: senaletica-3.jpg</span>
+                        <div class="gallery-item-caption">Señalización Horizontal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Constructora Puerto Varas</h3>
+                    <p class="footer-description">Expertos en obras viales globales y conservación vial a largo plazo</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#inicio">Inicio</a></li>
+                        <li><a href="../index.html#servicios">Servicios</a></li>
+                        <li><a href="../index.html#proyectos">Proyectos</a></li>
+                        <li><a href="../index.html#recursos">Recursos</a></li>
+                        <li><a href="../index.html#nosotros">Nosotros</a></li>
+                        <li><a href="../index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="gestion-contratos-viales.html">Gestión de Contratos Viales</a></li>
+                        <li><a href="asfaltos.html">Asfaltos</a></li>
+                        <li><a href="senaletica-vial.html">Señalética Vial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Sistema</h4>
+                    <ul class="footer-links">
+                        <li><a href="http://127.0.0.1:8001/login" target="_blank">Acceder al Sistema</a></li>
+                        <li><a href="http://127.0.0.1:8001/trabaja-con-nosotros" target="_blank">Trabaja con Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contacto</h4>
+                    <ul class="footer-links">
+                        <li>Puerto Varas, Chile</li>
+                        <li>contacto@constructorapuertovaras.cl</li>
+                        <li>+56 9 XXXX XXXX</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Constructora Puerto Varas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+

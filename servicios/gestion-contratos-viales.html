@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestión de Contratos Viales - Constructora Puerto Varas. Contratos de conservación vial de 2 a 4 años con gestión integral de redes viales.">
+    <title>Gestión de Contratos Viales - Constructora Puerto Varas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .service-hero {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        .service-hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        .service-hero p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .service-content {
+            padding: 4rem 0;
+        }
+        .service-info {
+            max-width: 900px;
+            margin: 0 auto 4rem;
+        }
+        .service-info h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+        }
+        .service-info p {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        .service-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .feature-item {
+            padding: 1.5rem;
+            background: var(--bg-light);
+            border-radius: 0.75rem;
+            border-left: 4px solid var(--primary-color);
+        }
+        .feature-item h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+        .feature-item p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .service-gallery {
+            margin-top: 4rem;
+        }
+        .service-gallery h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .gallery-item {
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-item-caption {
+            padding: 1rem;
+            background: white;
+            text-align: center;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <a href="../index.html" class="logo-link">
+                            <img src="../images/logo-constructora.png" alt="Constructora Puerto Varas" class="logo-image" loading="lazy">
+                        </a>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="../index.html#inicio" class="nav-link">Inicio</a></li>
+                        <li><a href="../index.html#servicios" class="nav-link">Servicios</a></li>
+                        <li><a href="../index.html#proyectos" class="nav-link">Proyectos</a></li>
+                        <li><a href="../index.html#recursos" class="nav-link">Recursos</a></li>
+                        <li><a href="../index.html#nosotros" class="nav-link">Nosotros</a></li>
+                        <li><a href="../index.html#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                    <a href="http://127.0.0.1:8001/login" class="btn-login" target="_blank" title="Acceder al Sistema">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
+                        </svg>
+                    </a>
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <h1>Gestión de Contratos Viales</h1>
+            <p>Contratos de conservación vial de 2 a 4 años. Gestión integral de redes viales predeterminadas, optimizando recursos y asegurando continuidad en el mantenimiento de infraestructura.</p>
+        </div>
+    </section>
+
+    <!-- Service Content -->
+    <section class="service-content">
+        <div class="container">
+            <div class="service-info">
+                <h2>Nuestro Enfoque</h2>
+                <p>
+                    En Constructora Puerto Varas, nos especializamos en la gestión integral de contratos de conservación vial a largo plazo. 
+                    Nuestro modelo de negocio se centra en contratos de 2 a 4 años que agrupan múltiples tareas de mantenimiento en una sola 
+                    licitación, optimizando recursos y asegurando la continuidad de la conservación de una sección vial predeterminada.
+                </p>
+                <p>
+                    Este enfoque nos permite gestionar de manera eficiente redes viales completas, coordinando trabajos de mantenimiento 
+                    preventivo, correctivo y mejoramiento, garantizando que la infraestructura vial se mantenga en óptimas condiciones 
+                    durante todo el período del contrato.
+                </p>
+
+                <h2>Servicios Incluidos</h2>
+                <div class="service-features">
+                    <div class="feature-item">
+                        <h3>Mantenimiento Preventivo</h3>
+                        <p>Programas de mantenimiento continuo para prevenir deterioros y extender la vida útil de la infraestructura vial.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Reparaciones Correctivas</h3>
+                        <p>Intervenciones oportunas para corregir daños y mantener la transitabilidad de las vías en todo momento.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Mejoramiento Vial</h3>
+                        <p>Obras de mejoramiento que elevan el estándar de la infraestructura existente.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Gestión de Recursos</h3>
+                        <p>Optimización de maquinaria, personal y materiales para máxima eficiencia operativa.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Monitoreo Continuo</h3>
+                        <p>Sistemas de monitoreo y control de calidad para asegurar el cumplimiento de estándares.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Reportes y Documentación</h3>
+                        <p>Documentación completa y reportes periódicos del estado y avance de los trabajos.</p>
+                    </div>
+                </div>
+
+                <h2>Ventajas de Nuestro Modelo</h2>
+                <p>
+                    Los contratos de conservación vial a largo plazo ofrecen múltiples ventajas tanto para el cliente como para la ejecución 
+                    eficiente de los trabajos. Permiten una planificación estratégica, optimización de recursos, continuidad operativa y 
+                    una relación de trabajo estable que facilita la mejora continua de los procesos.
+                </p>
+            </div>
+
+            <!-- Gallery -->
+            <div class="service-gallery">
+                <h2>Galería de Proyectos</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../images/proyecto-conservacion-red-regional.jpg" alt="Conservación vial en red regional" loading="lazy">
+                        <div class="gallery-item-caption">Conservación Vial - Red Regional</div>
+                    </div>
+                    <div class="gallery-item">
+                        <span class="image-placeholder-label">Imagen: gestion-contratos-1.jpg</span>
+                        <div class="gallery-item-caption">Mantenimiento Continuo de Vías</div>
+                    </div>
+                    <div class="gallery-item">
+                        <span class="image-placeholder-label">Imagen: gestion-contratos-2.jpg</span>
+                        <div class="gallery-item-caption">Gestión Integral de Redes Viales</div>
+                    </div>
+                    <div class="gallery-item">
+                        <span class="image-placeholder-label">Imagen: gestion-contratos-3.jpg</span>
+                        <div class="gallery-item-caption">Equipos de Trabajo Especializados</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Constructora Puerto Varas</h3>
+                    <p class="footer-description">Expertos en obras viales globales y conservación vial a largo plazo</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#inicio">Inicio</a></li>
+                        <li><a href="../index.html#servicios">Servicios</a></li>
+                        <li><a href="../index.html#proyectos">Proyectos</a></li>
+                        <li><a href="../index.html#recursos">Recursos</a></li>
+                        <li><a href="../index.html#nosotros">Nosotros</a></li>
+                        <li><a href="../index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="gestion-contratos-viales.html">Gestión de Contratos Viales</a></li>
+                        <li><a href="asfaltos.html">Asfaltos</a></li>
+                        <li><a href="senaletica-vial.html">Señalética Vial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Sistema</h4>
+                    <ul class="footer-links">
+                        <li><a href="http://127.0.0.1:8001/login" target="_blank">Acceder al Sistema</a></li>
+                        <li><a href="http://127.0.0.1:8001/trabaja-con-nosotros" target="_blank">Trabaja con Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contacto</h4>
+                    <ul class="footer-links">
+                        <li>Puerto Varas, Chile</li>
+                        <li>contacto@constructorapuertovaras.cl</li>
+                        <li>+56 9 XXXX XXXX</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Constructora Puerto Varas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
